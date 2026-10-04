@@ -14,9 +14,9 @@
 - [Требования безопасности](docs/security-requirements.md) — `SR-*` и критерии приёмки.
 - [Модель угроз](docs/threat-model.md) — `T-*`, границы доверия и приоритеты.
 - [Проектные решения](docs/design-decisions.md) — `D-*`, обоснования и будущие проверки.
+- [Вклад участников](CONTRIBUTIONS.md).
 
-Материалы подготовлены по [правилам проекта](https://github.com/hse-rbpo-bachelor-2026/course/blob/main/project.md) и [регламенту EK1](https://github.com/hse-rbpo-bachelor-2026/course/blob/main/assessment/EK1.md). Комплект остаётся черновиком до проверки командой и ранней калибровки преподавателем.
-
+Материалы подготовлены по [правилам проекта](https://github.com/hse-rbpo-bachelor-2026/course/blob/main/project.md) и [регламенту EK1](https://github.com/hse-rbpo-bachelor-2026/course/blob/main/assessment/EK1.md).
 ## Локальный запуск
 
 Нужен .NET 10 SDK. Установщик для Windows, macOS и Linux доступен на [официальной странице .NET](https://dotnet.microsoft.com/download/dotnet/10.0).
@@ -48,3 +48,8 @@ curl -i http://127.0.0.1:5080/health
 ## Дальнейшая работа
 
 После проверки паспорта и калибровки проекта — хранилище мероприятий, учётные записи и проверка прав, затем регистрация и отмена с контролем числа мест. Проверки из `D-*` выполняются после появления соответствующих механизмов.
+
+
+## Проверка технической основы
+
+4 октября 2026 года локально выполнены команды restore, build и run из этой инструкции с .NET SDK 10.0.401 на Windows. Сборка: 0 ошибок и 0 предупреждений. `GET /health`: HTTP 200, JSON `{"status":"ok","service":"three-cats-events"}`; неизвестный маршрут: 404; `POST /health`: 405. Запущенный процесс остановлен.
