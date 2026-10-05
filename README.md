@@ -15,6 +15,7 @@
 - [Модель угроз](docs/threat-model.md) — `T-*`, границы доверия и приоритеты.
 - [Проектные решения](docs/design-decisions.md) — `D-*`, обоснования и будущие проверки.
 - [Вклад участников](CONTRIBUTIONS.md).
+- [Использование ИИ](AI_USAGE.md).
 
 Материалы подготовлены по [правилам проекта](https://github.com/hse-rbpo-bachelor-2026/course/blob/main/project.md) и [регламенту EK1](https://github.com/hse-rbpo-bachelor-2026/course/blob/main/assessment/EK1.md).
 ## Локальный запуск
